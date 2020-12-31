@@ -81,12 +81,59 @@ body{
   margin-right: 65px;
 }
 
+#logo:hover h3{
+  animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight {
+  from{
+    transform: translateX(200%);
+  }to{
+    transform: translateX(0%);
+  }
+}
+
+#logo:hover{
+  border-radius: 2px;
+  color: black;
+  background-color: #ccc;
+}
+
 #logo .gear{
   display: block;
   float: left;
   font-size: 30px;
   margin-top: 8px;
   margin-left: 26px;
+  /*Animando el logo*/
+  animation-name: rotate-gear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; /*siempre va a tener la misma velocidad*/
+}
+/*Animando rotacion del logo*/
+@keyframes rotate-gear{
+  form{
+    transform: rotateZ(0deg);
+  }to{
+    transform: rotateZ(360deg);
+  }
+}
+/*Animando el logo cuando el cursor este en el*/
+#logo:hover .gear{
+  animation: fromBellow 500ms linear;
+}
+/*Animando subida y bajada en el eje y*/
+@keyframes fromBellow{
+  0%{
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(200%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
 }
 /*Fin estilos logo*/
 
