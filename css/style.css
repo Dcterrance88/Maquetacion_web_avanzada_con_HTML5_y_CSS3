@@ -603,6 +603,7 @@ body{
   line-height: 100px;
   text-align: center;
   font-family: "BebasNeue";
+  transition: 1s;
 }
 
 #blog a{
@@ -612,6 +613,60 @@ body{
   font-size: 40px;
   letter-spacing: 3px;
   color: #00538c;
+  transition: 1s;
+}
+
+#blog:hover{
+  background-color: #333;
+  border: 10px solid #37bcf9;
+  border-radius: 240px;
+  box-shadow: 0px 0px 10px gray;
+  animation: blink 10s infinite linear;
+}
+
+@keyframes blink {
+  0%{
+    border: 10px solid #6664FF;
+  }
+  10%{
+    border: 10px solid #2B97FA;
+  }
+  20%{
+    border: 10px solid #01C4E7;
+  }
+  30%{
+    border: 10px solid #15E6CC;
+  }
+  40%{
+    border: 10px solid #2EF8A0;
+  }
+  50%{
+    border: 10px solid #67FF6B;
+  }
+  60%{
+    border: 10px solid #C6E602;
+  }
+  70%{
+    border: 10px solid #E7C500;
+  }
+  80%{
+    border: 10px solid #FF6A62;
+  }
+  90%{
+    border: 10px solid #F82D97;
+  }
+  100%{
+    border: 10px solid #6664FF;
+  }
+}
+
+#blog:hover a{
+  color: white;
+  text-shadow: 1px 1px 1px black,
+               1px 2px 1px black,
+               1px 3px 1px black,
+               1px 4px 1px black,
+               1px 6px 1px black;
 }
 /*Fin Estilos Articulos*/
 
@@ -670,6 +725,13 @@ body{
 #footer ul li a{
   display: block;
   height: 40px;
+  transition: all 300ms;
+}
+
+#footer ul li:hover a{
+  padding-left: 40px;
+  color: white;
+  width: 100%;
 }
 
 #footer iframe{
