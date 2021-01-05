@@ -5,6 +5,7 @@
   }
 
   #banner h1{
+    width: 100%;
     font-size: 35px;
     text-align: center;
     margin: 33px auto;
@@ -41,4 +42,95 @@
   #footer h5{
     font-size: 30px;
   }
+}
+
+@media (max-width: 1080px) {
+  .card .category {
+    font-size: 17px;
+  }
+
+  .card .description {
+    font-size: 13px;
+  }
+
+  #articles{
+    width: 61%;
+  }
+}
+
+@media (max-width: 970px){
+  #articles{
+    width: 59%;
+  }
+
+  #footer ul {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #footer > .wrap > div {
+    width: 22%;
+  }
+
+  #footer h5{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 924px){
+  #articles{
+    width: 65%;
+  }
+  #lateral{
+    width: 25%;
+  }
+  #lateral input[type="text"] {
+    width: 77%;
+  }
+
+  #login input[type="email"], #login input[type="password"] {
+    width: 65%;
+  }
+
+  #login #user,
+  #login #password {
+    margin-left: 24px;
+  }
+  .aside-box {
+    width: 95%;
+    min-height: 140px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #login input[type="submit"],
+  #login input[type="button"],
+  #login input[type="reset"],
+  #login button {
+    margin-bottom: 0px;
+  }
+
+  #login input[type="reset"]{
+    display: none;
+  }
+
+  #login a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #login a:last-child {
+    padding-bottom: 10px;
+  }
+
+  #banner h1 {
+    width: 100%;
+  }
+
+  #footer > .wrap > div {
+    width: 27%;
+    margin: 20px;
+  }
+
+
 }
