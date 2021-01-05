@@ -131,6 +131,33 @@
     width: 27%;
     margin: 20px;
   }
+}
 
+@media (max-width: 899px){
+  #lateral h3{
+    font-size: 20px;
+  }
+}
 
+@media (max-width: 799px){
+  #banner h1{
+    font-size: 29px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .card .category{
+    font-size: 15px;
+    margin-top: -23px;
+  }
+
+  .card .description {
+    display: none;
+  }
+
+  #footer img{
+     max-width: 100%;
+  }
 }
